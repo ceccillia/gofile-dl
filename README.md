@@ -1,9 +1,5 @@
 # Gofile-dl [![python](https://img.shields.io/badge/Python-3.11-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org) 
 
-<a href="https://buymeacoffee.com/r1y5i" target="_blank">
-<img style="border-radius: 20px" src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
-</a>
-
 ## About ##
 A CLI (Command Line Interface) tool to download all directories and files from a gofile.io link as a batch  
 
@@ -58,6 +54,9 @@ python run.py -t 4 https://gofile.io/d/foobar
 ```console
 python run.py -e "*.jpg" -e "foo.bar" https://gofile.io/d/foobar
 ```
-
+#### Example 4: Download files from https://gofile.io/d/foobar with 4 threads to directory /baz/qux with proxy ####
+```console
+python run.py -t 4 -d /baz/qux --proxy http:127.0.0.1:3128 https://gofile.io/d/foobar
+```
 ## License ##
 This project is licensed under the [MIT License](LICENSE.md)
